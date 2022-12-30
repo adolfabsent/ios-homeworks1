@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		783A82732955C6E9002F5E6B /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783A82722955C6E9002F5E6B /* ProfileViewController.swift */; };
-		783A82752955EA56002F5E6B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783A82742955EA56002F5E6B /* ViewController.swift */; };
 		7855E723294A07CA002C1368 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7855E722294A07CA002C1368 /* AppDelegate.swift */; };
 		7855E725294A07CA002C1368 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7855E724294A07CA002C1368 /* SceneDelegate.swift */; };
 		7855E72C294A07CC002C1368 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7855E72B294A07CC002C1368 /* Assets.xcassets */; };
@@ -21,7 +20,6 @@
 
 /* Begin PBXFileReference section */
 		783A82722955C6E9002F5E6B /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		783A82742955EA56002F5E6B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7855E71F294A07CA002C1368 /* Navigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Navigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7855E722294A07CA002C1368 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7855E724294A07CA002C1368 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,7 +65,6 @@
 				7855E73E294A38C8002C1368 /* CControllers */,
 				7855E722294A07CA002C1368 /* AppDelegate.swift */,
 				7855E724294A07CA002C1368 /* SceneDelegate.swift */,
-				783A82742955EA56002F5E6B /* ViewController.swift */,
 				7855E72B294A07CC002C1368 /* Assets.xcassets */,
 				7855E72D294A07CC002C1368 /* LaunchScreen.storyboard */,
 				7855E730294A07CC002C1368 /* Info.plist */,
@@ -167,7 +164,6 @@
 			files = (
 				7855E744294A3D9F002C1368 /* PostViewController.swift in Sources */,
 				7855E723294A07CA002C1368 /* AppDelegate.swift in Sources */,
-				783A82752955EA56002F5E6B /* ViewController.swift in Sources */,
 				7855E747294A4240002C1368 /* Post.swift in Sources */,
 				7855E749294A4987002C1368 /* InfoViewController.swift in Sources */,
 				7855E737294A1AEE002C1368 /* FeedViewController.swift in Sources */,
