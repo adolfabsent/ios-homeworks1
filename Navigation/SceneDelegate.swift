@@ -6,17 +6,35 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) { guard let windowScene = (scene as? UIWindowScene) else { return }
 
-        if let windowScene = scene as? UIWindowScene {
-            let window = UIWindow(frame: windowScene.coordinateSpace.bounds)
-            window.rootViewController = createTabBarController()
-            self.window = window
-            window.makeKeyAndVisible()
-        }
+        guard let scene = (scene as? UIWindowScene) else { return }
 
-        window = UIWindow(frame: windowScene.coordinateSpace.bounds)
-        window?.windowScene = windowScene
-        window?.rootViewController = createTabBarController()
-        window?.makeKeyAndVisible()
+        let window = UIWindow(windowScene: scene)
+
+        let feedViewController = FeedViewController()
+        let profileViewController = ProfileViewController()
+        let postViewController = PostViewController()
+
+        let usersNavigationController = UINavigationController(rootViewController: feedViewController)
+        let profileNavigationController = UINavigationController(rootViewController: profileViewController)
+
+        let tabBarController = UITabBarController()
+
+        tabBarController.viewControllers = [usersNavigationController, profileNavigationController]
+
+        usersNavigationController.tabBarItem.title = "Users"
+        usersNavigationController.tabBarItem.image = UIImage(systemName: "person.2")
+
+        profileNavigationController.tabBarItem.title = "Profile"
+        profileNavigationController.tabBarItem.image = UIImage(systemName: "person.crop.circle")
+
+        postViewController.navigationItem.rightBarButtonItem?.title = "INFO"
+
+
+        window.rootViewController = tabBarController
+        window.makeKeyAndVisible()
+
+        self.window = window
+
 
     }
 
@@ -37,26 +55,4 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func sceneDidEnterBackground(_ scene: UIScene) {
 
     }
-
-    func createFeedViewController() -> UINavigationController {
-        let feedViewController = FeedViewController()
-        feedViewController.title = "Лента"
-        feedViewController.tabBarItem = UITabBarItem(title: "Лента", image: UIImage(systemName: "doc.richtext"), tag: 0)
-        return UINavigationController(rootViewController: feedViewController)
-    }
-
-    func createProfileViewController() -> UINavigationController {
-        let profileViewController = ProfileViewController()
-        profileViewController.title = "Профиль"
-        profileViewController.tabBarItem = UITabBarItem(title: "Профиль", image: UIImage(systemName: "person.circle"), tag: 1)
-        return UINavigationController(rootViewController: profileViewController)
-    }
-
-    func createTabBarController() -> UITabBarController {
-        let tabBarController = UITabBarController()
-        UITabBar.appearance().backgroundColor = .systemGray
-        tabBarController.viewControllers = [createFeedViewController(), createProfileViewController()]
-        return tabBarController
-    }
 }
-

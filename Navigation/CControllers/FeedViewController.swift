@@ -4,44 +4,35 @@ class FeedViewController: UIViewController {
 
     var post = Post(title: "My post")
 
-    private lazy var button: UIButton = {
-
-        let button = UIButton()
-        button.backgroundColor = .systemPink
-        button.layer.cornerRadius = 12
-        button.setTitle("Перейти на пост", for: .normal)
-        button.setTitleColor(.lightGray, for: .normal)
-        button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 24)
-        button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
-        button.translatesAutoresizingMaskIntoConstraints = false
-        self.view.addSubview(button)
-        return button
-
-    }()
+    var button = UIButton(frame: CGRectMake(150, 240, 90, 30))
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemYellow
-        setupButton()
-        button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
-        self.view.addSubview(button)
-    }
-    
 
-    private func setupButton() {
-        self.view.addSubview(self.button)
-        self.button.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: -100).isActive = true
-        self.button.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 20).isActive = true
-        self.button.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: -20).isActive = true
-        self.button.heightAnchor.constraint(equalToConstant: 50).isActive = true
+        setupView()
 
     }
 
-    
-    @objc private func buttonAction() {
+    private func setupView(){
+        title = "Feed"
+        view.backgroundColor = .white
+        button.setTitle("Go To Post", for: .normal)
+        button.addTarget(self, action: #selector(buttonIsPressed), for: .touchUpInside)
+        button.backgroundColor = .gray
+        view.addSubview(button)
+    }
+
+    @objc private func buttonIsPressed(){
+
         let postViewController = PostViewController()
+
         self.navigationController?.pushViewController(postViewController, animated: true)
-        postViewController.titlePost = post.title
+
+        postViewController.titleString = post.title
+
     }
+
 }
+
+
 

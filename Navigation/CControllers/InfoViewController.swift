@@ -2,21 +2,38 @@ import UIKit
 
 class InfoViewController: UIViewController {
     
+    var button = UIButton(frame: CGRectMake(150, 240, 95, 95))
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let newButton = UIButton(frame: CGRect(x: 100, y: 100, width: 100, height: 50))
-        newButton.backgroundColor = .systemYellow
-        newButton.setTitle("Post", for: .normal)
-        newButton.addTarget(self, action: #selector(showAlert), for: .touchUpInside)
-        self.view.addSubview(newButton)
+
+        setupView()
+
     }
-    
-    @objc func showAlert(sender: UIButton!) {
-        let alert = UIAlertController(title: "My Post", message: "Create new Post", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: nil))
-        alert.addAction(UIAlertAction(title: "No", style: .cancel, handler: nil))
-        self.present(alert, animated: true)
+
+    private func setupView(){
+        title = "Info"
+        view.backgroundColor = .white
+        button.setTitle("Push Post", for: .normal)
+        button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
+        button.backgroundColor = .gray
+        view.addSubview(button)
     }
-    
+
+    @objc private func buttonAction(){
+
+        let alert = UIAlertController(title: "Yes", message: "Create new post", preferredStyle: .alert)
+
+        let cancelAction = UIAlertAction(title: "OK", style: .cancel)
+        let printAction = UIAlertAction(title: "Отчёт в консоль", style: .default) { _ in
+            print("False")
+        }
+
+        alert.addAction(cancelAction)
+        alert.addAction(printAction)
+
+        present(alert, animated: true)
+
+    }
+
 }
