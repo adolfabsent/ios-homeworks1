@@ -2,28 +2,25 @@ import UIKit
 
 class PostViewController: UIViewController {
 
-    var titlePost: String = "New Post"
-
-    var myButton = UIBarButtonItem()
-    var secondButton = UIBarButtonItem()
+    var titleString: String = "New Post"
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupView()
-        myButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(newAction))
-        navigationItem.rightBarButtonItem = myButton
+
+        let barButtonItem = UIBarButtonItem(title: "+", style: .plain, target: self, action: #selector(newAction))
+
+        self.navigationItem.rightBarButtonItem = barButtonItem
+
+        view.backgroundColor = .white
+        title = titleString
     }
 
-    @objc  private func setupView() {
-        self.view.backgroundColor = .lightGray
-        self.navigationItem.title = "My Post"
-        self.navigationItem.rightBarButtonItem = secondButton
-        self.navigationController?.navigationBar.prefersLargeTitles = true
+    @objc private func newAction(){
 
-    }
-
-    @objc private func newAction() {
         let infoViewController = InfoViewController()
-        self.present(infoViewController, animated: true, completion: nil)
+
+        self.navigationController?.pushViewController(infoViewController, animated: true)
+
     }
+
 }
