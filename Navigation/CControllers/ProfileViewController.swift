@@ -1,29 +1,29 @@
+//
+//  ProfileViewController.swift
+//  Navigation
+//
+//  Created by Максим Зиновьев on 04.01.2023.
+//
+
 import UIKit
 
 class ProfileViewController: UIViewController {
-    
-    private lazy var firstButton: UIButton = {
-        let button = UIButton()
-        var color: UIColor = .blue
-        button.translatesAutoresizingMaskIntoConstraints = false
-        button.setTitle("Back", for: .normal)
-        return button
-    }()
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .lightGray
-        self.navigationItem.title = "Мой пост"
-        self.navigationController?.navigationBar.prefersLargeTitles = true
-        firstButton.addTarget(self, action: #selector(buttonPressed), for: .touchUpInside)
-        view.addSubview(firstButton)
-        
+
+        // Do any additional setup after loading the view.
     }
     
-    @objc func buttonPressed() {
-        let profileViewController = ProfileViewController()
-        present(profileViewController, animated: true)
-    }
-}
 
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+    }
+    */
+
+}
