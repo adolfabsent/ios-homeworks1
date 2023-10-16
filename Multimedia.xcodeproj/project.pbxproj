@@ -10,9 +10,16 @@
 		784CBB2C2ADB27050024FD70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784CBB2B2ADB27050024FD70 /* AppDelegate.swift */; };
 		784CBB2E2ADB27050024FD70 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784CBB2D2ADB27050024FD70 /* SceneDelegate.swift */; };
 		784CBB302ADB27050024FD70 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784CBB2F2ADB27050024FD70 /* ViewController.swift */; };
-		784CBB332ADB27050024FD70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 784CBB312ADB27050024FD70 /* Main.storyboard */; };
 		784CBB352ADB27060024FD70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 784CBB342ADB27060024FD70 /* Assets.xcassets */; };
-		784CBB382ADB27060024FD70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 784CBB362ADB27060024FD70 /* LaunchScreen.storyboard */; };
+		784CBB402ADB27260024FD70 /* AudioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784CBB3F2ADB27260024FD70 /* AudioViewController.swift */; };
+		784CBB422ADB27370024FD70 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784CBB412ADB27370024FD70 /* VideoViewController.swift */; };
+		784CBB442ADB27450024FD70 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784CBB432ADB27450024FD70 /* CustomButton.swift */; };
+		784CBB462ADD9C0B0024FD70 /* Dollhouse.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 784CBB452ADD9C0B0024FD70 /* Dollhouse.mp3 */; };
+		784CBB482ADD9C230024FD70 /* BAMBAM .mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 784CBB472ADD9C230024FD70 /* BAMBAM .mp3 */; };
+		784CBB4A2ADDAFB80024FD70 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 784CBB492ADDAFB80024FD70 /* Launch Screen.storyboard */; };
+		784CBB4C2ADDBAAB0024FD70 /* Daughter.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 784CBB4B2ADDBAAB0024FD70 /* Daughter.mp3 */; };
+		784CBB4E2ADDBACF0024FD70 /* Naked.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 784CBB4D2ADDBACF0024FD70 /* Naked.mp3 */; };
+		784CBB502ADDBADE0024FD70 /* Miley.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 784CBB4F2ADDBADE0024FD70 /* Miley.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +27,17 @@
 		784CBB2B2ADB27050024FD70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		784CBB2D2ADB27050024FD70 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		784CBB2F2ADB27050024FD70 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		784CBB322ADB27050024FD70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		784CBB342ADB27060024FD70 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		784CBB372ADB27060024FD70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		784CBB392ADB27060024FD70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		784CBB3F2ADB27260024FD70 /* AudioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioViewController.swift; sourceTree = "<group>"; };
+		784CBB412ADB27370024FD70 /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		784CBB432ADB27450024FD70 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		784CBB452ADD9C0B0024FD70 /* Dollhouse.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Dollhouse.mp3; sourceTree = "<group>"; };
+		784CBB472ADD9C230024FD70 /* BAMBAM .mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "BAMBAM .mp3"; sourceTree = "<group>"; };
+		784CBB492ADDAFB80024FD70 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		784CBB4B2ADDBAAB0024FD70 /* Daughter.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Daughter.mp3; sourceTree = "<group>"; };
+		784CBB4D2ADDBACF0024FD70 /* Naked.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Naked.mp3; sourceTree = "<group>"; };
+		784CBB4F2ADDBADE0024FD70 /* Miley.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Miley.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,9 +73,16 @@
 				784CBB2B2ADB27050024FD70 /* AppDelegate.swift */,
 				784CBB2D2ADB27050024FD70 /* SceneDelegate.swift */,
 				784CBB2F2ADB27050024FD70 /* ViewController.swift */,
-				784CBB312ADB27050024FD70 /* Main.storyboard */,
+				784CBB3F2ADB27260024FD70 /* AudioViewController.swift */,
+				784CBB412ADB27370024FD70 /* VideoViewController.swift */,
+				784CBB432ADB27450024FD70 /* CustomButton.swift */,
 				784CBB342ADB27060024FD70 /* Assets.xcassets */,
-				784CBB362ADB27060024FD70 /* LaunchScreen.storyboard */,
+				784CBB492ADDAFB80024FD70 /* Launch Screen.storyboard */,
+				784CBB452ADD9C0B0024FD70 /* Dollhouse.mp3 */,
+				784CBB472ADD9C230024FD70 /* BAMBAM .mp3 */,
+				784CBB4B2ADDBAAB0024FD70 /* Daughter.mp3 */,
+				784CBB4D2ADDBACF0024FD70 /* Naked.mp3 */,
+				784CBB4F2ADDBADE0024FD70 /* Miley.mp3 */,
 				784CBB392ADB27060024FD70 /* Info.plist */,
 			);
 			path = Multimedia;
@@ -125,9 +146,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				784CBB382ADB27060024FD70 /* LaunchScreen.storyboard in Resources */,
 				784CBB352ADB27060024FD70 /* Assets.xcassets in Resources */,
-				784CBB332ADB27050024FD70 /* Main.storyboard in Resources */,
+				784CBB462ADD9C0B0024FD70 /* Dollhouse.mp3 in Resources */,
+				784CBB502ADDBADE0024FD70 /* Miley.mp3 in Resources */,
+				784CBB4E2ADDBACF0024FD70 /* Naked.mp3 in Resources */,
+				784CBB4A2ADDAFB80024FD70 /* Launch Screen.storyboard in Resources */,
+				784CBB482ADD9C230024FD70 /* BAMBAM .mp3 in Resources */,
+				784CBB4C2ADDBAAB0024FD70 /* Daughter.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,31 +164,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				784CBB302ADB27050024FD70 /* ViewController.swift in Sources */,
+				784CBB402ADB27260024FD70 /* AudioViewController.swift in Sources */,
+				784CBB442ADB27450024FD70 /* CustomButton.swift in Sources */,
 				784CBB2C2ADB27050024FD70 /* AppDelegate.swift in Sources */,
+				784CBB422ADB27370024FD70 /* VideoViewController.swift in Sources */,
 				784CBB2E2ADB27050024FD70 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		784CBB312ADB27050024FD70 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				784CBB322ADB27050024FD70 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		784CBB362ADB27060024FD70 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				784CBB372ADB27060024FD70 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		784CBB3A2ADB27060024FD70 /* Debug */ = {
@@ -297,7 +306,6 @@
 				INFOPLIST_FILE = Multimedia/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -325,7 +333,6 @@
 				INFOPLIST_FILE = Multimedia/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
